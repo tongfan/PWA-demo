@@ -1,12 +1,12 @@
 var dataCacheName = 'PWA-demo-data-v0.0.1';
 var cacheName = 'PWA-demo-v0.0.1';
 var filesToCache = [
-    '/',
-    '/index.html',
-    '/scripts/app.js',
-    '/styles/normalize.css',
-    '/styles/main.css',
-    '/images/ic_refresh_white_24px.svg'
+    '/PWA-demo/',
+    '/PWA-demo/index.html',
+    '/PWA-demo/scripts/app.js',
+    '/PWA-demo/styles/normalize.css',
+    '/PWA-demo/styles/main.css',
+    '/PWA-demo/images/ic_refresh_white_24px.svg'
 ];
 
 // on install
