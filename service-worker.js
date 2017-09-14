@@ -4,7 +4,6 @@ var filesToCache = [
     '/PWA-demo/',
     '/PWA-demo/index.html',
     '/PWA-demo/scripts/app.js',
-    '/PWA-demo/styles/normalize.css',
     '/PWA-demo/styles/main.css',
     '/PWA-demo/images/ic_refresh_white_24px.svg'
 ];
