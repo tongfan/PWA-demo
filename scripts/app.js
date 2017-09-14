@@ -48,15 +48,17 @@
     };
 
     app.updateUi = function (datas) {
-        var ul = document.createElement('ul');
-        ul.className = 'list';
-        datas.forEach(function (data) {
-            var item = app.itemTemplate.cloneNode(true);
-            item.classList.remove('item-template');
-            item.innerHTML = '<a href="https://github.com/' + data.full_name + '">' + data.name + '</a>';
-            ul.appendChild(item);
-        });
-        app.container.innerHTML = ul.outerHTML;
+        if (datas && datas.length) {
+            var ul = document.createElement('ul');
+            ul.className = 'list';
+            datas.forEach(function (data) {
+                var item = app.itemTemplate.cloneNode(true);
+                item.classList.remove('item-template');
+                item.innerHTML = '<a href="https://github.com/' + data.full_name + '">' + data.name + '</a>';
+                ul.appendChild(item);
+            });
+            app.container.innerHTML = ul.outerHTML;
+        }
     };
 
     app.getData();
